@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap");
 header {
+  width: 100%;
   display: flex;
   margin: 2rem;
   padding-left: 2rem;
-  gap: 20%;
+  gap: 28%;
 }
 header h1 {
   font-size: 4.8rem;
@@ -17,7 +18,7 @@ header h1:hover {
 
 nav ul {
   display: flex;
-  gap: 10rem;
+  gap: 13rem;
   font-size: 2rem;
   list-style: none;
 }
@@ -44,17 +45,20 @@ nav li a:hover {
 
 .profil img {
   border-radius: 50%;
-  width: 400px;
+  width: 500px;
 }
 
+.presentation {
+  padding-top: 2rem;
+}
 .presentation h1 {
-  font-size: 5.4rem;
+  font-size: 6.4rem;
 }
 .presentation h1 span {
   color: #1B7A0A;
 }
 .presentation .typing {
-  font-size: 3.4rem;
+  font-size: 4.4rem;
 }
 .presentation .typing span {
   position: relative;
@@ -92,7 +96,7 @@ nav li a:hover {
     content: "Gamer";
   }
   81%, 100% {
-    content: "SigmaBoy";
+    content: "Boy";
   }
 }
 @keyframes typing {
@@ -104,14 +108,31 @@ nav li a:hover {
   }
 }
 .presentation p {
-  font-size: 2.2rem;
-  width: 70%;
+  font-size: 2.8rem;
+  width: 100%;
   margin-top: 2rem;
 }
 .presentation ul {
   display: flex;
   list-style: none;
   gap: 3rem;
+  margin: 3rem 0;
+}
+.presentation ul img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.presentation ul img:hover {
+  color: red;
+}
+.presentation .hire {
+  text-decoration: none;
+  color: #1B7A0A;
+  border: 2px solid #1B7A0A;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 * {
