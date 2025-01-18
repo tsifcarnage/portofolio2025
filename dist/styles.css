@@ -118,21 +118,38 @@ nav li a:hover {
   gap: 3rem;
   margin: 3rem 0;
 }
-.presentation ul img {
-  width: 5.5rem;
-  height: 5.5rem;
+.presentation ul .icon {
+  text-align: center;
+  color: #1B7A0A;
+  font-size: 4.2rem;
+  width: 7rem;
+  height: 7rem;
+  border: 3px solid #1B7A0A;
+  border-radius: 50%;
+  padding: 1rem;
 }
-.presentation ul img:hover {
-  color: red;
+.presentation ul .icon:hover {
+  color: white;
+  background-color: #1B7A0A;
+  font-size: 4.7rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  box-shadow: 0 0 16px 3px #1B7A0A;
 }
 .presentation .hire {
   text-decoration: none;
   color: #1B7A0A;
-  border: 2px solid #1B7A0A;
+  border: 3px solid #1B7A0A;
   border-radius: 10rem;
   padding: 1rem 2rem;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: bold;
+}
+.presentation .hire:hover {
+  background-color: #1B7A0A;
+  font-size: 3.4rem;
+  color: white;
+  box-shadow: 0 0 16px 3px #1B7A0A;
 }
 
 * {
