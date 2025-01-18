@@ -38,7 +38,80 @@ nav li a:hover {
 
 .home {
   display: flex;
-  gap: 10%;
+  gap: 5%;
+  margin: 10rem;
+}
+
+.profil img {
+  border-radius: 50%;
+  width: 400px;
+}
+
+.presentation h1 {
+  font-size: 5.4rem;
+}
+.presentation h1 span {
+  color: #1B7A0A;
+}
+.presentation .typing {
+  font-size: 3.4rem;
+}
+.presentation .typing span {
+  position: relative;
+}
+.presentation .typing span::before {
+  content: "Web developer";
+  animation: words 20s infinite;
+}
+.presentation .typing span::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 3px solid #1B7A0A;
+  }
+}
+@keyframes words {
+  0%, 20% {
+    content: "Web developer";
+  }
+  21%, 40% {
+    content: "Graphic designer";
+  }
+  41%, 60% {
+    content: "UI/UX Designer";
+  }
+  61%, 80% {
+    content: "Gamer";
+  }
+  81%, 100% {
+    content: "SigmaBoy";
+  }
+}
+@keyframes typing {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}
+.presentation p {
+  font-size: 2.2rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+.presentation ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
 }
 
 * {
@@ -49,6 +122,7 @@ nav li a:hover {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
