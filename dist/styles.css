@@ -43,9 +43,31 @@ nav li a:hover {
   margin: 10rem;
 }
 
+.profil {
+  position: relative;
+  display: inline-block;
+}
 .profil img {
   border-radius: 50%;
   width: 500px;
+  transition: opacity 0.3s ease;
+}
+.profil video {
+  position: absolute;
+  border-radius: 50%;
+  width: 500px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profil:hover img {
+  opacity: 0;
+}
+.profil:hover video {
+  opacity: 1;
+  box-shadow: 0 0 26px 12px #1B7A0A;
 }
 
 .presentation {
@@ -63,6 +85,9 @@ nav li a:hover {
 .presentation .typing span {
   position: relative;
 }
+.presentation .typing span:hover {
+  text-shadow: 3px 2px 12px #1B7A0A;
+}
 .presentation .typing span::before {
   content: "Web developer";
   animation: words 20s infinite;
@@ -72,7 +97,7 @@ nav li a:hover {
   background-color: black;
   position: absolute;
   width: calc(100% + 8px);
-  height: 100%;
+  height: calc(100% + 6px);
   border-left: 3px solid black;
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
