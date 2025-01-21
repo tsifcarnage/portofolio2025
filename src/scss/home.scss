@@ -35,8 +35,12 @@
     padding-top: 2rem;
     h1{
         font-size: 6.4rem;
-        span{
+        .tsif,span{
             color: $greendark-color;
+        }
+        .tsif:hover{
+            text-decoration: underline;
+            text-shadow: 3px 2px 12px $greenlight-color;
         }
     }
     .typing{

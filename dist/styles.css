@@ -75,8 +75,12 @@ nav li a:hover {
 .presentation h1 {
   font-size: 6.4rem;
 }
-.presentation h1 span {
+.presentation h1 .tsif, .presentation h1 span {
   color: #1B7A0A;
+}
+.presentation h1 .tsif:hover {
+  text-decoration: underline;
+  text-shadow: 3px 2px 12px #1B7A0A;
 }
 .presentation .typing {
   font-size: 4.4rem;
@@ -175,6 +179,50 @@ nav li a:hover {
   font-size: 3.4rem;
   color: white;
   box-shadow: 0 0 16px 3px #1B7A0A;
+}
+
+.service {
+  background-color: #161616;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  gap: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.service .sectitle {
+  text-align: center;
+  font-size: 4.4rem;
+}
+.service .sectitle:hover {
+  color: #1B7A0A;
+  text-shadow: 0px 2px 5px #1B7A0A;
+}
+
+.container {
+  margin: 0 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  gap: 2rem;
+}
+.container div {
+  background-color: #1B7A0A;
+  max-width: 300px;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.container div h2 {
+  padding-bottom: 1.5rem;
+}
+.container div:hover {
+  background-color: black;
+  border: 6px solid #1B7A0A;
+  box-shadow: 3px 2px 16px 5px #1B7A0A;
+}
+.container div:hover h2 {
+  color: #1B7A0A;
 }
 
 * {
