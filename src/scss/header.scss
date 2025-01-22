@@ -1,5 +1,6 @@
 header{
     display: flex;
+    justify-content: space-around;
     margin: 2rem;
     padding-left: 2rem;
     gap: 10%;
@@ -15,7 +16,7 @@ header{
 nav{
     ul{
         display: flex;
-        gap: 13rem;
+        gap: 10rem;
         font-size: 2rem;
         list-style: none;
     }
