@@ -27,4 +27,10 @@
             color: $greendark-color;
         }
     }
+    div:hover{
+        box-shadow: inset 3px 2px 16px 5px $greendark-color;
+    }
+}
+.contlogo:hover{
+    box-shadow: 3px 2px 16px 5px $greendark-color;
 }
