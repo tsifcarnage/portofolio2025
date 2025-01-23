@@ -1,0 +1,6 @@
+.myproject{
+    background-color: $section-color;
+    display: flex;
+    flex-direction: column;
+    @include gaptit;
+}

@@ -11,13 +11,13 @@
 .profil{
     position: relative;
     display: inline-block;
-    img{
+    .tsifcap{
         border-radius: 50%;
         width: 100%;
         transition: opacity 0.3s ease;
         margin: 2rem;
     }
-    video{
+    .tsifhover{
         position: absolute;
         border-radius: 50%;
         width: calc(100% + 2px);
@@ -28,10 +28,10 @@
     }
 }
 .profil:hover{
-    img{
+    .tsifcap{
         opacity: 0;
     }
-    video{
+    .tsifhover{
         opacity: 1;
         box-shadow:0 0 26px 12px  $greendark-color;
     }
