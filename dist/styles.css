@@ -38,11 +38,13 @@ nav li a:hover {
 }
 
 .home {
+  background-color: black;
   display: flex;
   gap: 5%;
-  margin: 10rem;
+  margin: 2rem;
+  margin-bottom: 4rem;
+  min-height: 100vh;
   height: 100vh;
-  max-height: 42em;
 }
 
 .profil {
@@ -51,15 +53,16 @@ nav li a:hover {
 }
 .profil img {
   border-radius: 50%;
-  width: 500px;
+  width: 100%;
   transition: opacity 0.3s ease;
+  margin: 2rem;
 }
 .profil video {
   position: absolute;
   border-radius: 50%;
-  width: 500px;
+  width: calc(100% + 2px);
   top: 0;
-  left: 0;
+  left: 1.5rem;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -153,19 +156,18 @@ nav li a:hover {
 .presentation ul .icon {
   text-align: center;
   color: #1B7A0A;
-  font-size: 4.2rem;
-  width: 7rem;
-  height: 7rem;
+  font-size: calc(100% + 2rem);
+  width: calc(100% + 2px);
+  max-height: 100%;
   border: 3px solid #1B7A0A;
   border-radius: 50%;
   padding: 1rem;
 }
 .presentation ul .icon:hover {
+  font-size: calc(100% + 3rem);
+  width: calc(100% + 3px);
   color: white;
   background-color: #1B7A0A;
-  font-size: 4.7rem;
-  width: 7.5rem;
-  height: 7.5rem;
   box-shadow: 0 0 16px 3px #1B7A0A;
 }
 .presentation .hire {
