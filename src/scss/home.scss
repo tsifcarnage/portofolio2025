@@ -2,27 +2,37 @@
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
-    gap: 5%;
+    align-items: center;
+    gap: 2rem;
     margin: 2rem;
     margin-bottom: 4rem;
     min-height: 100vh;
-    height: 100vh;
+    height: 100%;
 }
 
 .profil{
     position: relative;
-    width: 30%;
+    flex: 1 1 30%;
+    width: 100%;
+    left: 10%; /* Place l'élément au milieu horizontalement */
+    transform: translateX(-10%); 
     .tsifcap{
+        width: 500px;
+        height: 500px;
+        min-width: 500px;
+        position: relative;
         border-radius: 50%;
-        width: 100%;
+        // width: 60%;
         transition: opacity 0.3s ease;
         margin: 2rem;
     }
     .tsifhover{
+        width: 500px;
+        height: 500px;
+        min-width: 500px;
         position: absolute;
         border-radius: 50%;
-        width: calc(100% + 2px);
+        // width: calc(60% + 2px);
         top: 0;
         left: 1.5rem;
         opacity: 0;
@@ -41,7 +51,9 @@
 
 .presentation{
     padding-top: 2rem;
-    width: 50%;
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-right: 10em;
     h1{
         font-size: 6.4rem;
         .tsif,span{

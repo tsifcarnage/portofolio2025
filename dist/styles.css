@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap");
 header {
@@ -42,27 +43,35 @@ nav li a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5%;
+  gap: 2rem;
   margin: 2rem;
   margin-bottom: 4rem;
   min-height: 100vh;
-  height: 100vh;
+  height: 100%;
 }
 
 .profil {
   position: relative;
-  width: 30%;
+  flex: 1 1 30%;
+  width: 100%;
+  left: 10%; /* Place l'élément au milieu horizontalement */
+  transform: translateX(-10%);
 }
 .profil .tsifcap {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
+  position: relative;
   border-radius: 50%;
-  width: 100%;
   transition: opacity 0.3s ease;
   margin: 2rem;
 }
 .profil .tsifhover {
+  width: 500px;
+  height: 500px;
+  min-width: 500px;
   position: absolute;
   border-radius: 50%;
-  width: calc(100% + 2px);
   top: 0;
   left: 1.5rem;
   opacity: 0;
@@ -79,7 +88,9 @@ nav li a:hover {
 
 .presentation {
   padding-top: 2rem;
-  width: 50%;
+  flex: 1 1 50%;
+  max-width: 50%;
+  margin-right: 10em;
 }
 .presentation h1 {
   font-size: 6.4rem;
