@@ -40,6 +40,7 @@ nav li a:hover {
 .home {
   background-color: black;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 5%;
   margin: 2rem;
@@ -50,6 +51,7 @@ nav li a:hover {
 
 .profil {
   position: relative;
+  width: 30%;
 }
 .profil .tsifcap {
   border-radius: 50%;
@@ -77,6 +79,7 @@ nav li a:hover {
 
 .presentation {
   padding-top: 2rem;
+  width: 50%;
 }
 .presentation h1 {
   font-size: 6.4rem;

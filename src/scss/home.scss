@@ -1,7 +1,7 @@
 .home{
     background-color: black;
     display: flex;
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items:center;
     gap: 5%;
     margin: 2rem;
@@ -12,7 +12,7 @@
 
 .profil{
     position: relative;
-    // display: inline-block;
+    width: 30%;
     .tsifcap{
         border-radius: 50%;
         width: 100%;
@@ -41,6 +41,7 @@
 
 .presentation{
     padding-top: 2rem;
+    width: 50%;
     h1{
         font-size: 6.4rem;
         .tsif,span{
