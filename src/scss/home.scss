@@ -4,8 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-    margin: 2rem;
-    margin-bottom: 4rem;
+    margin: 2rem 0 4rem;
     min-height: 100vh;
     height: 100%;
 }
@@ -19,7 +18,7 @@
     .tsifcap{
         width: 500px;
         height: 500px;
-        min-width: 500px;
+        min-width: 450px;
         position: relative;
         border-radius: 50%;
         // width: 60%;
@@ -27,9 +26,9 @@
         margin: 2rem;
     }
     .tsifhover{
-        width: 500px;
-        height: 500px;
-        min-width: 500px;
+        width: 510px;
+        height: 510px;
+        min-width: 450px;
         position: absolute;
         border-radius: 50%;
         // width: calc(60% + 2px);

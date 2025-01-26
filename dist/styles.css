@@ -6,7 +6,7 @@ header {
   justify-content: space-around;
   margin: 2rem;
   padding-left: 2rem;
-  gap: 10%;
+  gap: 4rem;
 }
 header h1 {
   font-size: 4.8rem;
@@ -18,6 +18,7 @@ header h1:hover {
 }
 
 nav ul {
+  width: 80%;
   display: flex;
   gap: 10rem;
   font-size: 2rem;
@@ -44,8 +45,7 @@ nav li a:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
-  margin: 2rem;
-  margin-bottom: 4rem;
+  margin: 2rem 0 4rem;
   min-height: 100vh;
   height: 100%;
 }
@@ -60,16 +60,16 @@ nav li a:hover {
 .profil .tsifcap {
   width: 500px;
   height: 500px;
-  min-width: 500px;
+  min-width: 450px;
   position: relative;
   border-radius: 50%;
   transition: opacity 0.3s ease;
   margin: 2rem;
 }
 .profil .tsifhover {
-  width: 500px;
-  height: 500px;
-  min-width: 500px;
+  width: 510px;
+  height: 510px;
+  min-width: 450px;
   position: absolute;
   border-radius: 50%;
   top: 0;
@@ -285,6 +285,58 @@ nav li a:hover {
 
 .contlogo:hover {
   box-shadow: 3px 2px 16px 5px #1B7A0A;
+}
+
+.progression {
+  width: 60%;
+  border: 5px solid #1B7A0A;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+.progression .charge {
+  width: 100%;
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.progression .charge li {
+  display: flex;
+  gap: 1rem;
+}
+.progression .charge li h2 {
+  width: 18rem;
+}
+.progression .barre {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  top: 1rem;
+  background-color: white;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+.progression .barre .longbarre, .progression .barre .longbarre5, .progression .barre .longbarre4, .progression .barre .longbarre3, .progression .barre .longbarre2 {
+  width: 90%;
+  background-color: orange;
+  border-radius: 10rem;
+  height: 1rem;
+}
+.progression .barre .longbarre2 {
+  background-color: blue;
+  width: 80%;
+}
+.progression .barre .longbarre3 {
+  background-color: rgb(236, 83, 178);
+  width: 91%;
+}
+.progression .barre .longbarre4 {
+  background-color: yellow;
+  width: 10%;
+}
+.progression .barre .longbarre5 {
+  background-color: purple;
+  width: 75%;
 }
 
 .myproject {
