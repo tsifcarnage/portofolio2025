@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px) {
+    .presentation{
+        padding-top: 2rem;
+        max-width: 100%;
+        margin-right: 10em;
+        margin-left:10em;
+        width: 500px;
+    }
+    header{
+        h1{
+            padding-right: 10em;
+        }
+    }
+    nav{
+        position: relative;
+        ul{
+            // width: 80%;
+            display: block;
+            position: absolute;
+            gap: 5rem;
+            font-size: 2rem;
+            list-style: none;
+        }
+        li{
+            width: 100px;
+        }
+    }
+}
