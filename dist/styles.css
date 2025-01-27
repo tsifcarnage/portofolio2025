@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap");
 header {
@@ -54,8 +53,6 @@ nav li a:hover {
   position: relative;
   flex: 1 1 30%;
   width: 100%;
-  left: 10%; /* Place l'élément au milieu horizontalement */
-  transform: translateX(-10%);
 }
 .profil .tsifcap {
   width: 500px;
