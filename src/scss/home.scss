@@ -16,22 +16,22 @@
     // left: 10%; /* Place l'élément au milieu horizontalement */
     // transform: translateX(-10%); 
     .tsifcap{
-        width: 500px;
-        height: 500px;
-        min-width: 450px;
+        // width: 500px;
+        // height: 500px;
+        max-width: 450px;
         position: relative;
         border-radius: 50%;
-        // width: 60%;
+        width: 60%;
         transition: opacity 0.3s ease;
         margin: 2rem;
     }
     .tsifhover{
-        width: 510px;
-        height: 510px;
-        min-width: 450px;
+        // width: 510px;
+        // height: 510px;
+        max-width: 450px;
         position: absolute;
         border-radius: 50%;
-        // width: calc(60% + 2px);
+        width: calc(60% + 2px);
         top: 0;
         left: 1.5rem;
         opacity: 0;
