@@ -43,7 +43,7 @@ nav li a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   margin: 2rem 0 4rem;
   min-height: 100vh;
@@ -149,9 +149,13 @@ nav li a:hover {
     width: calc(100% + 8px);
   }
 }
+.presentation .description {
+  width: 50em;
+}
 .presentation p {
   font-size: 2.8rem;
   width: 100%;
+  max-width: 43em;
   margin-top: 2rem;
 }
 .presentation ul {
