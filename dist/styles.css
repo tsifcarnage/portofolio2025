@@ -43,7 +43,7 @@ nav li a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   gap: 2rem;
   margin: 2rem 0 4rem;
   min-height: 100vh;
@@ -82,8 +82,7 @@ nav li a:hover {
 .presentation {
   padding-top: 2rem;
   max-width: 100%;
-  margin-right: 10em;
-  width: 600px;
+  width: 820px;
 }
 .presentation h1 {
   font-size: 6.4rem;

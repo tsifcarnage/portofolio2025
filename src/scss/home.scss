@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 2rem;
     margin: 2rem 0 4rem;
     min-height: 100vh;
@@ -53,8 +53,8 @@
     padding-top: 2rem;
     // flex: 1 1 50%;
     max-width: 100%;
-    margin-right: 10em;
-    width: 600px;
+    // margin-right: 10em;
+    width: 820px;
     h1{
         font-size: 6.4rem;
         .tsif,span{
