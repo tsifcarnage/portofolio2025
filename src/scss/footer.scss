@@ -1,0 +1,24 @@
+footer{
+    background-color: $greendark-color;
+}
+.footer-contain{
+    width: 50rem;
+    margin: auto;
+}
+.reseau{
+    ul{
+        @include flexing(center,center,2rem);
+        padding: 2rem;
+        list-style: none;
+        li{
+            background-color:black;
+            border-radius: 50%;
+            padding: 0.5rem 1rem;
+            a{
+                color: $greendark-color;
+                font-size: 3rem;
+            }
+            
+        }
+    }
+}
