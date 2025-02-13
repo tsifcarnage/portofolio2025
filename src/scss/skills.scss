@@ -1,9 +1,7 @@
 .skill{
     @include gaptit();
-    display: flex;
+    @include flexing(center,center,3rem);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .contlogo{
     display: grid;

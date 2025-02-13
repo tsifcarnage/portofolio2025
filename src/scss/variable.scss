@@ -2,10 +2,11 @@ $section-color:#161616;
 $greenlight-color:#1B7A0A;
 $greendark-color:#1B7A0A;
 $title-font-size:4.4rem;
-@mixin flexing{
+@mixin flexing($justify:center,$align:center,$gap:2rem){
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
+    gap:$gap;
 }
 @mixin gaptit{
     gap: 3rem;
