@@ -172,10 +172,9 @@ nav li a:hover {
   border: 3px solid #1B7A0A;
   border-radius: 50%;
   padding: 1rem;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in, box-shadow 0.5s ease-in;
 }
 .presentation ul .icon:hover {
-  font-size: calc(100% + 3rem);
-  width: calc(100% + 3px);
   color: white;
   background-color: #1B7A0A;
   box-shadow: 0 0 16px 3px #1B7A0A;
@@ -188,10 +187,10 @@ nav li a:hover {
   padding: 1rem 2rem;
   font-size: 3.2rem;
   font-weight: bold;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 .presentation .hire:hover {
   background-color: #1B7A0A;
-  font-size: 3.4rem;
   color: white;
   box-shadow: 0 0 16px 3px #1B7A0A;
 }
@@ -400,6 +399,7 @@ nav li a:hover {
   resize: vertical;
 }
 .contact form button {
+  position: relative;
   align-self: flex-end;
   padding: 0.5rem 1rem;
   color: white;
@@ -407,6 +407,30 @@ nav li a:hover {
   border: 4px solid #1B7A0A;
   border-radius: 0.5rem;
   font-size: 2rem;
+  overflow: hidden;
+  transition: color 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+.contact form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1B7A0A;
+  transition: left 0.5s ease-out;
+  z-index: 0;
+}
+.contact form button:hover::before {
+  left: 0;
+}
+.contact form button:hover {
+  color: #fff;
+  box-shadow: 0 0 26px 2px #1B7A0A;
+}
+.contact form button span {
+  position: relative;
+  z-index: 1;
 }
 
 * {

@@ -21,6 +21,7 @@
             resize: vertical;
         }
         button{
+            position: relative;
             align-self: flex-end;
             padding: .5rem 1rem;
             color: white;
@@ -28,6 +29,32 @@
             border: 4px solid $greenlight-color;
             border-radius: .5rem;
             font-size: 2rem;
+            overflow: hidden;
+            transition: color .5s ease-out, box-shadow .5s ease-out;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background-color: $greenlight-color;
+                transition: left .5s ease-out;
+                z-index: 0;               
+            }
+    
+            &:hover::before {
+                left: 0;
+            }
+    
+            &:hover {
+                color: #fff;
+                box-shadow:0 0 26px 2px  $greendark-color;
+            }
+            & span {
+                position: relative;
+                z-index: 1;
+            }
         }
     }
 }

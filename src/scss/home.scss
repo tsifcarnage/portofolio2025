@@ -146,10 +146,9 @@
             max-height: 100%;
             border: 3px solid $greendark-color;
             border-radius: 50%;
-            padding: 1rem;
+            padding: 1rem;     
+            transition: color .5s ease-in, background-color .5s ease-in, box-shadow .5s ease-in;
             &:hover{
-                font-size: calc(100% + 3rem);
-                width: calc(100% + 3px);
                 color: white;
                 background-color: $greendark-color;
                 box-shadow: 0 0 16px 3px $greendark-color;
@@ -165,9 +164,9 @@
         padding: 1rem 2rem;
         font-size: 3.2rem;
         font-weight: bold;
+        transition: color .5s ease-in-out, background-color .5s ease-in-out, box-shadow .5s ease-in-out;
         &:hover{
             background-color: $greendark-color;
-            font-size: 3.4rem;
             color: white;
             box-shadow: 0 0 16px 3px $greendark-color;
         }
