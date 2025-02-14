@@ -1,3 +1,4 @@
+@use 'variable' as *;
 footer{
     background-color: $greendark-color;
 }
@@ -13,12 +14,18 @@ footer{
         li{
             background-color:black;
             border-radius: 50%;
-            padding: 0.5rem 1rem;
-            a{
-                color: $greendark-color;
-                font-size: 3rem;
+            padding: 1rem;
+            // a{
+            //     color: $greendark-color;
+            //     font-size: 3rem;
+            //     padding: 0;
+            // } 
+            object{
+                padding: .5rem;
+                width: 3.6rem;
+                height: 3.6rem;
             }
-            
+ 
         }
     }
 }

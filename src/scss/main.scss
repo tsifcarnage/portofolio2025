@@ -1,14 +1,7 @@
+@use 'index' as *;
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
-@import 'variable';
-@import 'header';
-@import 'home';
-@import 'service';
-@import 'skills';
-@import 'project';
-@import 'responsive';
-@import 'contact';
-@import 'footer';
+
 *{
     margin: 0;
     padding: 0;

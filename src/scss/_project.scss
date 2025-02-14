@@ -1,3 +1,4 @@
+@use 'variable' as *;
 .myproject{
     background-color: $section-color;
     display: flex;
