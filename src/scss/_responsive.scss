@@ -11,21 +11,25 @@
             padding-right: 10em;
         }
     }
+    .burger{
+        display: block;
+    }
     nav{
         position: relative;
-        right: 10%;
         ul{
-            // width: 80%;
-            display: block;
+            width: 180px;
+            display: none;
+            flex-direction: column;
             position: absolute;
-            gap: 5rem;
+            gap: 2rem;
             font-size: 2rem;
             list-style: none;
         }
         li{
-            width: 100px;
+            width: 50px;
         }
     }
+    
     .service{
         width: 100%;
     }

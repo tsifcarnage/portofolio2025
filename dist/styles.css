@@ -16,15 +16,29 @@ header h1:hover {
   text-shadow: 3px 2px 12px;
 }
 
+.burger {
+  display: none;
+  z-index: 2;
+}
+.burger .fa-solid {
+  font-size: 3rem;
+}
+
+.active {
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
 nav ul {
   width: 80%;
   display: flex;
   gap: 10rem;
   font-size: 2rem;
   list-style: none;
-}
-nav li {
-  padding-top: 2rem;
 }
 nav li a {
   text-decoration: none;
@@ -354,19 +368,23 @@ nav li a:hover {
   header h1 {
     padding-right: 10em;
   }
+  .burger {
+    display: block;
+  }
   nav {
     position: relative;
-    right: 10%;
   }
   nav ul {
-    display: block;
+    width: 180px;
+    display: none;
+    flex-direction: column;
     position: absolute;
-    gap: 5rem;
+    gap: 2rem;
     font-size: 2rem;
     list-style: none;
   }
   nav li {
-    width: 100px;
+    width: 50px;
   }
   .service {
     width: 100%;
