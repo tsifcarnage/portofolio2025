@@ -441,6 +441,9 @@ footer {
   width: 50rem;
   margin: auto;
 }
+.footer-contain hr {
+  border: 1px solid black;
+}
 
 .reseau ul {
   display: flex;
@@ -454,11 +457,40 @@ footer {
   background-color: black;
   border-radius: 50%;
   padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  transition: background-color 0.5s ease, filter 0.5s ease;
 }
 .reseau ul li object {
-  padding: 0.5rem;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 100%;
+  filter: invert(0);
+}
+.reseau ul li:hover {
+  background-color: #1B7A0A;
+  box-shadow: 0 0 15px 3px black;
+}
+.reseau ul li:hover object {
+  filter: brightness(0) invert(1);
+}
+
+.navigat ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.navigat ul li {
+  list-style: none;
+}
+.navigat ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s ease-out;
+}
+.navigat ul li a:hover {
+  color: white;
 }
 
 * {
@@ -479,4 +511,4 @@ body {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
