@@ -202,6 +202,7 @@ nav li a:hover {
   gap: 3rem;
   padding-top: 4rem;
   padding-bottom: 8rem;
+  width: 100%;
 }
 
 .sectitle {
@@ -358,6 +359,7 @@ nav li a:hover {
   }
   nav {
     position: relative;
+    right: 10%;
   }
   nav ul {
     display: block;
@@ -368,6 +370,9 @@ nav li a:hover {
   }
   nav li {
     width: 100px;
+  }
+  .service {
+    width: 100%;
   }
 }
 .contact {
@@ -509,6 +514,10 @@ body {
   font-size: 1.6rem;
   background-color: black;
   color: white;
+}
+
+.bigcontain {
+  min-width: 1132px;
 }
 
 /*# sourceMappingURL=styles.css.map */

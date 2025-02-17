@@ -14,6 +14,7 @@
     }
     nav{
         position: relative;
+        right: 10%;
         ul{
             // width: 80%;
             display: block;
@@ -25,5 +26,8 @@
         li{
             width: 100px;
         }
+    }
+    .service{
+        width: 100%;
     }
 }
