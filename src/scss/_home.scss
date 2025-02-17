@@ -41,7 +41,7 @@
     }
     .tsifhover{
         opacity: 1;
-        box-shadow:0 0 26px 12px  v.$greendark-color;
+        box-shadow:0 0 26px 12px  v.$greenlight-color;
     }
 }
 
@@ -54,7 +54,7 @@
     h1{
         font-size: 6.4rem;
         .tsif,span{
-            color: v.$greendark-color;
+            color: v.$greenlight-color;
         }
         .tsif:hover{
             text-decoration: underline;
@@ -87,7 +87,7 @@
     }
     @keyframes cursor {
         to{
-            border-left: 3px solid v.$greendark-color;
+            border-left: 3px solid v.$greenlight-color;
         }
     }
     @keyframes words {
@@ -139,35 +139,35 @@
         margin: 3rem 0;
         .icon{
             text-align: center;
-            color: v.$greendark-color;
+            color: v.$greenlight-color;
             font-size: calc(100% + 2rem);
             width: calc(100% + 2px);
             max-height: 100%;
-            border: 3px solid v.$greendark-color;
+            border: 3px solid v.$greenlight-color;
             border-radius: 50%;
             padding: 1rem;     
             transition: color .5s ease-in, background-color .5s ease-in, box-shadow .5s ease-in;
             &:hover{
                 color: white;
-                background-color: v.$greendark-color;
-                box-shadow: 0 0 16px 3px v.$greendark-color;
+                background-color: v.$greenlight-color;
+                box-shadow: 0 0 16px 3px v.$greenlight-color;
             }
         }
         
     }
     .hire{
         text-decoration: none;
-        color: v.$greendark-color;
-        border: 3px solid v.$greendark-color;
+        color: v.$greenlight-color;
+        border: 3px solid v.$greenlight-color;
         border-radius: 10rem;
         padding: 1rem 2rem;
         font-size: 3.2rem;
         font-weight: bold;
         transition: color .5s ease-in-out, background-color .5s ease-in-out, box-shadow .5s ease-in-out;
         &:hover{
-            background-color: v.$greendark-color;
+            background-color: v.$greenlight-color;
             color: white;
-            box-shadow: 0 0 16px 3px v.$greendark-color;
+            box-shadow: 0 0 16px 3px v.$greenlight-color;
         }
     }
     

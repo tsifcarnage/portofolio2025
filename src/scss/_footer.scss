@@ -1,6 +1,6 @@
 @use 'variable' as *;
 footer{
-    background-color: $greendark-color;
+    background-color: $greenlight-color;
 }
 .footer-contain{
     width: 50rem;
@@ -26,7 +26,7 @@ footer{
             }
             transition: background-color .5s ease, filter .5s ease;
             &:hover{
-                background-color: $greendark-color;
+                background-color: $greenlight-color;
                 box-shadow: 0 0 15px 3px black;
                 object{
                     filter: brightness(0) invert(1);

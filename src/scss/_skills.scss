@@ -10,7 +10,7 @@
     border-radius: 3rem;
     grid-template-columns: repeat(5,1fr);
     gap: 3rem;
-    background: linear-gradient(147deg, rgb(27, 27, 27) 35%, $greendark-color 109%); 
+    background: linear-gradient(147deg, rgb(27, 27, 27) 35%, $greenlight-color 109%); 
      width: 70em;
     // width: 60%;
     div{
@@ -24,21 +24,21 @@
         h2{
             padding-top: 1rem;
             text-align: center;
-            color: $greendark-color;
+            color: $greenlight-color;
         }
     }
     div:hover{
-        box-shadow: inset 3px 2px 16px 5px $greendark-color;
+        box-shadow: inset 3px 2px 16px 5px $greenlight-color;
     }
 }
 .contlogo:hover{
-    box-shadow: 3px 2px 16px 5px $greendark-color;
+    box-shadow: 3px 2px 16px 5px $greenlight-color;
 }
 
 .progression{
     width: 60%;
     min-width: 60em;
-    border: 5px solid $greendark-color;
+    border: 5px solid $greenlight-color;
     padding: 2rem;
     border-radius: 3rem;
     .charge{
