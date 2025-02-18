@@ -2,11 +2,13 @@
 @media screen and (max-width: 1024px) {
     .home{
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .presentation{
         padding-top: 2rem;
         max-width: 100%;
-        margin-right: 13em;
+        margin:0 auto;
+        // margin-right: 13em;
         width: 500px;
     }
     header{
@@ -35,5 +37,21 @@
     
     .service{
         width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        & div{
+            flex: 1 1 calc(50% - 20px);
+        }
+    }
+    .contlogo{
+        display: flex;
+        flex-wrap: wrap;
+        & div{
+            flex: 1 1 calc(50% - 20px);
+        }
     }
 }
