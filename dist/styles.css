@@ -23,15 +23,18 @@ header h1:hover {
 }
 
 .burger {
+  cursor: pointer;
   display: none;
   z-index: 2;
 }
 .burger .fa-solid {
-  font-size: 3rem;
+  font-size: 5rem;
+  color: #1B7A0A;
 }
 
 .active {
   display: flex;
+  width: 500px;
 }
 
 nav {
@@ -322,16 +325,15 @@ nav li a:hover {
 }
 .progression .charge li {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
-.progression .charge li h2 {
-  width: 18rem;
+.progression .charge li img {
+  width: 50px;
 }
 .progression .barre {
-  position: relative;
+  align-self: center;
   width: 100%;
   height: 1rem;
-  top: 1rem;
   background-color: white;
   border-radius: 10rem;
   overflow: hidden;
@@ -352,7 +354,7 @@ nav li a:hover {
 }
 .progression .barre .longbarre4 {
   background-color: yellow;
-  width: 10%;
+  width: 50%;
 }
 .progression .barre .longbarre5 {
   background-color: purple;
@@ -369,12 +371,19 @@ nav li a:hover {
 }
 
 .contproj {
+  background-color: black;
+  width: 100%;
+  max-width: 50em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  padding: 0 10rem;
+  margin: auto;
+  padding: 2rem;
   flex-direction: column;
+  border: 2px solid #1B7A0A;
+  box-shadow: 3px 2px 16px 5px #1B7A0A;
+  border-radius: 2rem;
 }
 .contproj summary {
   display: flex;
@@ -387,13 +396,22 @@ nav li a:hover {
   color: white;
   font-size: 14px;
   margin-left: 8px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 }
 .contproj details[open] summary::after {
   transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
 }
 .contproj iframe {
   border-radius: 2rem;
+}
+.contproj p > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+.contproj p > a:hover {
+  color: #1B7A0A;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {

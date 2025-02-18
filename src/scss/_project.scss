@@ -6,9 +6,16 @@
     @include gaptit;
 }
 .contproj{
-    @include flexing(space-between,flex-start,2rem);
-    padding: 0 10rem;
+    background-color: black;
+    width: 100%;
+    max-width: 50em;
+    @include flexing(center,flex-start,2rem);
+    margin: auto;
+    padding:2rem;
     flex-direction: column;
+    border: 2px solid $greenlight-color;
+    box-shadow: 3px 2px 16px 5px $greenlight-color;
+    border-radius: 2rem;
     summary {
         display: flex;
         align-items: center;
@@ -20,12 +27,21 @@
     color: white;
     font-size: 14px;
     margin-left: 8px;
-    transition: transform 0.2s ease-in-out;
+    transition: transform .25s ease-in-out;
     }
     details[open] summary::after {
     transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
     }
     iframe{
         border-radius: 2rem;
+    }
+    p>a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.8rem;
+        &:hover{
+            color: $greenlight-color;
+            text-decoration: underline;
+        }
     }
 }

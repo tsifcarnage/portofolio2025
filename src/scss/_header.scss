@@ -21,15 +21,18 @@ header{
     
 }
 .burger{
+    cursor: pointer;
     display: none;
     z-index: 2;
     .fa-solid{
-        font-size: 3rem;
+        font-size: 5rem;
+        color: $greenlight-color;
     }
 
 }
 .active{
     display: flex;
+    width: 500px;
 }
 nav{
     // width: 100%;
