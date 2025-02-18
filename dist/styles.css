@@ -10,9 +10,10 @@ header {
 header h1 {
   font-size: 4.8rem;
   color: #269412;
+  transition: transform 0.25s ease, text-shadow 0.25s ease;
 }
 header h1:hover {
-  font-size: 4.9rem;
+  transform: scale(1.1);
   text-shadow: 3px 2px 12px;
 }
 
@@ -36,19 +37,21 @@ nav {
 nav ul {
   width: 80%;
   display: flex;
+  align-items: center;
   gap: 10rem;
   font-size: 2rem;
   list-style: none;
 }
 nav li a {
+  display: inline-block;
   text-decoration: none;
   color: white;
   font-weight: bold;
+  transition: color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
 }
 nav li a:hover {
-  font-size: 2.2rem;
+  transform: scale(1.2);
   color: #269412;
-  text-decoration: underline;
   text-shadow: 3px 2px 12px;
 }
 
@@ -97,7 +100,7 @@ nav li a:hover {
   width: 820px;
 }
 .presentation h1 {
-  font-size: 6.4rem;
+  font-size: 5rem;
 }
 .presentation h1 .tsif, .presentation h1 span {
   color: #1B7A0A;
@@ -107,7 +110,7 @@ nav li a:hover {
   text-shadow: 3px 2px 12px #1B7A0A;
 }
 .presentation .typing {
-  font-size: 4.4rem;
+  font-size: 3rem;
 }
 .presentation .typing span {
   position: relative;
@@ -164,7 +167,7 @@ nav li a:hover {
   width: 50em;
 }
 .presentation p {
-  font-size: 2.8rem;
+  font-size: 2rem;
   width: 100%;
   max-width: 43em;
   margin-top: 2rem;
@@ -178,13 +181,13 @@ nav li a:hover {
 .presentation ul .icon {
   text-align: center;
   color: #1B7A0A;
-  font-size: calc(100% + 2rem);
-  width: calc(100% + 2px);
+  font-size: calc(100% + 1rem);
+  width: calc(100% + 1px);
   max-height: 100%;
   border: 3px solid #1B7A0A;
   border-radius: 50%;
   padding: 1rem;
-  transition: color 0.5s ease-in, background-color 0.5s ease-in, box-shadow 0.5s ease-in;
+  transition: color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 .presentation ul .icon:hover {
   color: white;
@@ -193,13 +196,13 @@ nav li a:hover {
 }
 .presentation .hire {
   text-decoration: none;
-  color: #1B7A0A;
-  border: 3px solid #1B7A0A;
+  background-color: #1B7A0A;
+  color: black;
   border-radius: 10rem;
   padding: 1rem 2rem;
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 .presentation .hire:hover {
   background-color: #1B7A0A;

@@ -1,7 +1,7 @@
-@use 'variable' as v;
+@use 'variable' as *;
 .home{
     background-color: black;
-    @include v.flexing(space-evenly,center,2rem);
+    @include flexing(space-evenly,center,2rem);
     flex-wrap: wrap;
     margin: 2rem 0 4rem;
 }
@@ -41,7 +41,7 @@
     }
     .tsifhover{
         opacity: 1;
-        box-shadow:0 0 26px 12px  v.$greenlight-color;
+        box-shadow:0 0 26px 12px  $greenlight-color;
     }
 }
 
@@ -52,21 +52,21 @@
     // margin-right: 10em;
     width: 820px;
     h1{
-        font-size: 6.4rem;
+        font-size: 5rem;
         .tsif,span{
-            color: v.$greenlight-color;
+            color: $greenlight-color;
         }
         .tsif:hover{
             text-decoration: underline;
-            text-shadow: 3px 2px 12px v.$greenlight-color;
+            text-shadow: 3px 2px 12px $greenlight-color;
         }
     }
     .typing{
-        font-size: 4.4rem;
+        font-size: 3rem;
         span{
             position: relative;
             &:hover{
-                text-shadow: 3px 2px 12px v.$greenlight-color;
+                text-shadow: 3px 2px 12px $greenlight-color;
             }
             &::before{
                 content: 'Web developer';
@@ -87,7 +87,7 @@
     }
     @keyframes cursor {
         to{
-            border-left: 3px solid v.$greenlight-color;
+            border-left: 3px solid $greenlight-color;
         }
     }
     @keyframes words {
@@ -127,7 +127,7 @@
 
     }
     p{
-        font-size: 2.8rem;
+        font-size: 2rem;
         width: 100%;
         max-width: 43em;
         margin-top: 2rem;
@@ -139,35 +139,35 @@
         margin: 3rem 0;
         .icon{
             text-align: center;
-            color: v.$greenlight-color;
-            font-size: calc(100% + 2rem);
-            width: calc(100% + 2px);
+            color: $greenlight-color;
+            font-size: calc(100% + 1rem);
+            width: calc(100% + 1px);
             max-height: 100%;
-            border: 3px solid v.$greenlight-color;
+            border: 3px solid $greenlight-color;
             border-radius: 50%;
             padding: 1rem;     
-            transition: color .5s ease-in, background-color .5s ease-in, box-shadow .5s ease-in;
+            transition: color .25s ease, background-color .25s ease, box-shadow .25s ease;
             &:hover{
                 color: white;
-                background-color: v.$greenlight-color;
-                box-shadow: 0 0 16px 3px v.$greenlight-color;
+                background-color: $greenlight-color;
+                box-shadow: 0 0 16px 3px $greenlight-color;
             }
         }
         
     }
     .hire{
         text-decoration: none;
-        color: v.$greenlight-color;
-        border: 3px solid v.$greenlight-color;
+        background-color: $greenlight-color;
+        color: black;
         border-radius: 10rem;
         padding: 1rem 2rem;
-        font-size: 3.2rem;
+        font-size: 2rem;
         font-weight: bold;
-        transition: color .5s ease-in-out, background-color .5s ease-in-out, box-shadow .5s ease-in-out;
+        transition: color .25s ease, background-color .25s ease, box-shadow .25s ease;
         &:hover{
-            background-color: v.$greenlight-color;
+            background-color: $greenlight-color;
             color: white;
-            box-shadow: 0 0 16px 3px v.$greenlight-color;
+            box-shadow: 0 0 16px 3px $greenlight-color;
         }
     }
     
