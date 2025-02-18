@@ -2,16 +2,18 @@
 .home{
     background-color: black;
     @include flexing(space-evenly,center,2rem);
-    flex-wrap: wrap;
-    margin: 2rem 0 4rem;
+    padding-bottom: 4rem;
+    // flex-wrap: wrap;
+    // margin: 2rem 0 4rem;
 }
-
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
 .profil{
     position: relative;
     // flex: 1 1 30%;
-    width: 500px;
-    // left: 10%; /* Place l'élément au milieu horizontalement */
-    // transform: translateX(-10%); 
+    // width: 500px;
     .tsifcap{
         // width: 500px;
         // height: 500px;
@@ -34,23 +36,20 @@
         opacity: 0;
         transition: opacity 0.3s ease;
     }
-}
-.profil:hover{
-    .tsifcap{
-        opacity: 0;
-    }
-    .tsifhover{
-        opacity: 1;
-        box-shadow:0 0 26px 12px  $greenlight-color;
+    &:hover{
+        .tsifcap{
+            opacity: 0;
+        }
+        .tsifhover{
+            opacity: 1;
+            box-shadow:0 0 26px 12px  $greenlight-color;
+        }
     }
 }
 
+
 .presentation{
     padding-top: 2rem;
-    // flex: 1 1 50%;
-    max-width: 100%;
-    // margin-right: 10em;
-    width: 820px;
     h1{
         font-size: 5rem;
         .tsif,span{
@@ -122,10 +121,6 @@
             width: calc(100% + 8px);
         }
     }
-    .description{
-        width: 50em;
-
-    }
     p{
         font-size: 1.5rem;
         line-height: 1.4;
@@ -158,6 +153,7 @@
         
     }
     .hire{
+        display: inline-block;
         text-decoration: none;
         background-color: $greenlight-color;
         color: black;
