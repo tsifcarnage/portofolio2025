@@ -20,16 +20,18 @@ footer{
             padding: 1rem;            
             width: 5rem;
             height: 5rem;
-            object{
+            svg{
                 width: 100%; 
-                filter: invert(0);
+                height: 100%;
+                // filter: invert(0);
             }
             transition: background-color .5s ease, filter .5s ease;
             &:hover{
                 background-color: $greenlight-color;
                 box-shadow: 0 0 15px 3px black;
-                object{
-                    filter: brightness(0) invert(1);
+                svg path{
+                    // filter: brightness(0) invert(1);
+                    fill: white;
                 }
             }
         }

@@ -5,3 +5,27 @@
     flex-direction: column;
     @include gaptit;
 }
+.contproj{
+    @include flexing(space-between,flex-start,2rem);
+    padding: 0 10rem;
+    flex-direction: column;
+    summary {
+        display: flex;
+        align-items: center;
+        list-style: none; /* Enlève la flèche par défaut */
+        padding-bottom: 2rem;
+    }
+    summary::after {
+    content: "▶"; /* Flèche personnalisée */ 
+    color: white;
+    font-size: 14px;
+    margin-left: 8px;
+    transition: transform 0.2s ease-in-out;
+    }
+    details[open] summary::after {
+    transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
+    }
+    iframe{
+        border-radius: 2rem;
+    }
+}

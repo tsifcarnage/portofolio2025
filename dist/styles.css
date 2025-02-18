@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
@@ -367,6 +368,34 @@ nav li a:hover {
   padding-bottom: 8rem;
 }
 
+.contproj {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0 10rem;
+  flex-direction: column;
+}
+.contproj summary {
+  display: flex;
+  align-items: center;
+  list-style: none; /* Enlève la flèche par défaut */
+  padding-bottom: 2rem;
+}
+.contproj summary::after {
+  content: "▶"; /* Flèche personnalisée */
+  color: white;
+  font-size: 14px;
+  margin-left: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+.contproj details[open] summary::after {
+  transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
+}
+.contproj iframe {
+  border-radius: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
   .home {
     flex-wrap: wrap;
@@ -493,16 +522,16 @@ footer {
   height: 5rem;
   transition: background-color 0.5s ease, filter 0.5s ease;
 }
-.reseau ul li object {
+.reseau ul li svg {
   width: 100%;
-  filter: invert(0);
+  height: 100%;
 }
 .reseau ul li:hover {
   background-color: #1B7A0A;
   box-shadow: 0 0 15px 3px black;
 }
-.reseau ul li:hover object {
-  filter: brightness(0) invert(1);
+.reseau ul li:hover svg path {
+  fill: white;
 }
 
 .navigat ul {
