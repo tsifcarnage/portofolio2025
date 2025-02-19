@@ -11,8 +11,8 @@
     grid-template-columns: repeat(5,1fr);
     gap: 3rem;
     background: linear-gradient(147deg, rgb(27, 27, 27) 35%, $greenlight-color 109%); 
-     width: 70em;
-    // width: 60%;
+    width: 60%;
+    min-width: 70em;
     div{
         background-color: black;
         text-align: center;
@@ -26,18 +26,19 @@
             text-align: center;
             color: $greenlight-color;
         }
+        &:hover{
+            box-shadow: inset 3px 2px 16px 5px $greenlight-color;
+        }
     }
-    div:hover{
-        box-shadow: inset 3px 2px 16px 5px $greenlight-color;
-    }
+    &:hover{
+        box-shadow: 3px 2px 16px 5px $greenlight-color;
+    }    
 }
-.contlogo:hover{
-    box-shadow: 3px 2px 16px 5px $greenlight-color;
-}
+
 
 .progression{
     width: 60%;
-    min-width: 60em;
+    min-width: 70em;
     border: 5px solid $greenlight-color;
     padding: 2rem;
     border-radius: 3rem;
