@@ -45,3 +45,19 @@
         }
     }
 }
+.dots{
+    &::after{
+        content: "";
+        display: inline-block;
+        animation: untyping 2s infinite;
+        color: red;
+    }
+    @keyframes untyping {
+        0%{content:"";}
+        20%{content:".";}
+        40%{content:"..";}
+        60%{content:"...";}
+        80%{content:"..";}
+        100%{content:".";}
+    }
+}
