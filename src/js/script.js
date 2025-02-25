@@ -4,7 +4,7 @@ const nav = document.querySelector("nav");
 nav.style.backgroundColor = "transparent";
 burger.addEventListener("click", () => {
   nav.style.backgroundColor = "black";
-  menu.style.display = "flex";
+  //menu.style.display = "flex";
   //Pour afficher menu nav en responsive
   console.log("active");
   menu.classList.toggle("active");
