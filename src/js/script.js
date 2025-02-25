@@ -8,13 +8,13 @@ burger.addEventListener("click", () => {
   //Pour afficher menu nav en responsive
   console.log("active");
   menu.classList.toggle("active");
+  function masquerLien() {
+    // Masque le lien
+    nav.style.backgroundColor = "transparent";
+    menu.style.display = "none";
+  }
 });
 
-function masquerLien() {
-  // Masque le lien
-  nav.style.backgroundColor = "transparent";
-  menu.style.display = "none";
-}
 let scrollUp = document.querySelector(".up");
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
