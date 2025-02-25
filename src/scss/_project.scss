@@ -7,8 +7,8 @@
 }
 .contproj{
     background-color: black;
-    width: 60%;
-    min-width: 70em;
+    width: 90%;
+    //min-width: 70em;
     @include flexing(center,flex-start,2rem);
     margin: auto;
     padding:2rem;

@@ -4,6 +4,8 @@
     .home{
         flex-wrap: wrap;
         flex-direction: column;
+        margin: auto 5rem;
+        width:450px;
     }
     .presentation{
         padding-top: 2rem;
@@ -55,6 +57,27 @@
     }
 }
 @media screen and (max-width: 768px){
+    header{
+        gap: 2rem;
+        padding: 1rem 1rem;
+    }
+    .profil{
+        .tsifcap{
+            max-width: 90%;
+            margin: auto 2rem;
+        }
+        .tsifhover{
+            max-width: 90%;
+            margin: auto 2rem;
+        }    
+    }
+    
+    nav{
+        ul{
+            font-size: 2rem;
+            gap: 3rem;
+        }
+    }
     .wrapper{
         margin: auto;
         height: auto;
@@ -78,3 +101,8 @@
     }
 }
 
+@media screen and (max-width: 1024px){
+.contlogo{
+    grid-template-columns: repeat(4, 1fr);
+}
+};

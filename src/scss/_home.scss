@@ -50,7 +50,8 @@
 
 
 .presentation{
-    padding-top: 2rem;
+    padding: 2rem;
+    width: calc(100% - 4rem);
     h1{
         font-size: 5rem;
         .tsif,span{
@@ -128,7 +129,7 @@
         font-weight: 300;
         width: 100%;
         max-width: 43em;
-        margin-top: 2rem;
+        margin-top:2rem;
     }
     ul{
         display: flex;
