@@ -31,11 +31,6 @@ header h1:hover {
   color: #1B7A0A;
 }
 
-.active {
-  display: flex;
-  width: 500px;
-}
-
 nav {
   display: flex;
   flex-direction: row-reverse;
@@ -43,9 +38,12 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  gap: 10rem;
-  font-size: 2rem;
+  gap: 5rem;
+  font-size: 2.5rem;
   list-style: none;
+}
+nav ul.active {
+  display: flex;
 }
 nav li a {
   display: inline-block;
@@ -451,14 +449,23 @@ nav li a:hover {
     margin: 0 auto;
     width: 500px;
   }
-  header h1 {
-    padding-right: 10em;
+  .contlogo, .contproj, .progression {
+    min-width: 0;
+    width: 90%;
   }
   .burger {
     display: block;
   }
   nav {
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
   }
   nav ul {
     width: 180px;
@@ -469,8 +476,10 @@ nav li a:hover {
     font-size: 2rem;
     list-style: none;
   }
-  nav li {
-    width: 50px;
+  .burger {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .service {
     width: 100%;
@@ -487,6 +496,9 @@ nav li a:hover {
   }
   .container div {
     flex: 1 1 calc(50% - 20px);
+  }
+  .contproject {
+    min-width: 0;
   }
   .contlogo {
     display: flex;
@@ -683,10 +695,6 @@ body {
   font-size: 1.6rem;
   background-color: black;
   color: white;
-}
-
-.bigcontain {
-  min-width: 1132px;
 }
 
 /*# sourceMappingURL=styles.css.map */
