@@ -457,9 +457,10 @@ nav li a:hover {
     display: block;
   }
   nav {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
+    background-color: black;
     height: 100%;
     width: 100%;
     z-index: 2;
