@@ -457,10 +457,9 @@ nav li a:hover {
     display: block;
   }
   nav {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
-    background-color: red;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -477,12 +476,12 @@ nav li a:hover {
     list-style: none;
   }
   .burger {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
   }
-  .service {
-    width: 100%;
+  .service, .skill, .myproject, footer {
+    min-width: 500px;
   }
 }
 @media screen and (max-width: 768px) {

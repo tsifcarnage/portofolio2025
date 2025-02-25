@@ -1,4 +1,5 @@
 @use 'variable' as *;
+
 @media screen and (max-width: 740px) {
     .home{
         flex-wrap: wrap;
@@ -28,27 +29,28 @@
             gap: 2rem;
             font-size: 2rem;
             list-style: none;
+            
         }
         // li{
         //     width: 50px;
         // }
-        position: fixed;
-        left: 0;
-        top: 0;
-        background-color: red;
-        height: 100%;
-        width: 100%;
-        z-index: 2;
-        justify-content: center;
-        align-items: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            //background-color: red;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
     }
     .burger{
-        position: absolute;
+        position: fixed;
         top:0;
         right: 0;
     }
-    .service{
-        width: 100%;
+    .service, .skill,.myproject, footer  {
+        min-width: 500px;
     }
 }
 @media screen and (max-width: 768px){
