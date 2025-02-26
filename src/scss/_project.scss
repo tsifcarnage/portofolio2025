@@ -29,11 +29,18 @@
     margin-left: 8px;
     transition: transform .25s ease-in-out;
     }
+    details{
+        width: 100%;
+        max-height: 300px;
+        max-width: 30em;
+    }
     details[open] summary::after {
     transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
     }
     iframe{
         border-radius: 2rem;
+        width: 100%;
+        height: 250px;
     }
     p>a{
         text-decoration: none;
@@ -45,6 +52,7 @@
         }
     }
 }
+
 .dots{
     &::after{
         content: "";
