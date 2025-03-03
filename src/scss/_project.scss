@@ -31,11 +31,13 @@
     }
     details{
         width: 100%;
-        max-height: 300px;
-        max-width: 30em;
     }
     details[open] summary::after {
     transform: rotate(90deg); /* Fait tourner la flèche quand c'est ouvert */
+    }
+    details[open] iframe{
+        width:60% ;
+        height: 500px;
     }
     iframe{
         border-radius: 2rem;

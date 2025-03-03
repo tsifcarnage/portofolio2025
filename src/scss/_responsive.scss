@@ -141,3 +141,15 @@
         right: 0;
     }
 };
+@media screen and (max-width: 1246px) {
+    .contproj details[open] iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contproj details[open] iframe {
+        width: 100%;
+        height: 400px; // Réduction de la hauteur sur petits écrans
+    }
+}
