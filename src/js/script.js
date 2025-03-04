@@ -1,6 +1,8 @@
 const burger = document.querySelector(".burger");
-const menu = document.getElementById("menu");
 const nav = document.querySelector("nav");
+const menu = document.getElementById("menu");
+const feedback = document.getElementById("feedback-form");
+
 nav.style.backgroundColor = "transparent";
 burger.addEventListener("click", () => {
   nav.style.backgroundColor = "black";
@@ -29,4 +31,17 @@ window.addEventListener("scroll", () => {
   }
 
   lastScroll = currentScroll;
+});
+
+feedback.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value; //value pour form, et textContent html
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const capitName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+  const message = `Bonjour <b>${capitName}</b>, ton email: <b>${email.toLowerCase()}</b> et ton numéro de téléphone <b>${phone}</b> sont bien envoyés.`;
+  document.getElementById("feedback-message").style.display = "block";
+  document.getElementById("confirmation-message").innerHTML = message;
+  document.getElementById("feedback-form").reset();
 });

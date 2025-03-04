@@ -198,14 +198,18 @@
             
             <section class="contact" id="Contact">
                 <h1 class="sectitle">Contact <span>Me</span></h1>
-                <form>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="tel" placeholder="Your phone number">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" placeholder="Your messages"></textarea>
-                    <button type="button"><span>Submit</span></button>
+                <form id="feedback-form">
+                    <input type="text" placeholder="Your name" id="name" required>
+                    <input type="email" placeholder="Your email" id="email" required>
+                    <input type="tel" placeholder="Your phone number,exemple: +1234567890" pattern="^\+?\d{10,15}$" id="phone" required>
+                    <input type="text" placeholder="Subject"  id="subject" required>
+                    <textarea name="" id="" placeholder="Your messages" required></textarea>
+                    <button type="submit"><span>Submit</span></button>
                 </form>
+                <div id="feedback-message" style="display: none;">
+                    <h2>Merci pour votre soumission !</h2>
+                    <p id="confirmation-message"></p>
+                </div>
             </section>
         </main>
         <footer>
