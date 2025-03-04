@@ -57,4 +57,19 @@
             }
         }
     }
+    div{
+        width: 100%;
+        max-width: 50em;
+        margin: auto;
+        padding:0 3rem;
+        h2{
+            //text-align: center;
+            color: $greenlight-color;
+            padding-bottom: 1rem;
+        }
+        p{
+            line-height: 2.2rem;
+            //text-align: center;
+        }
+    }
 }

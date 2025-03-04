@@ -647,6 +647,19 @@ nav li a:hover {
 .contact form button span {
   position: relative;
 }
+.contact div {
+  width: 100%;
+  max-width: 50em;
+  margin: auto;
+  padding: 0 3rem;
+}
+.contact div h2 {
+  color: #1B7A0A;
+  padding-bottom: 1rem;
+}
+.contact div p {
+  line-height: 2.2rem;
+}
 
 footer {
   background-color: #1B7A0A;
