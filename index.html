@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="dist\styles.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="src/medias/img/logoordi.png" type="image/x-icon">
 </head>
@@ -170,7 +171,15 @@
                         <summary>
                             <h2>Projects</h2>    
                         </summary>
-                        <p style="color: red;">Featuring (In progress) <span class="dots"></span> </p>
+                        <!-- <p style="color: red;">Featuring (In progress) <span class="dots"></span> </p> -->
+                        <div class="swiper listproj">
+                            <div id="project-list" class="swiper-wrapper">
+                                
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>                            
+                        </div>
                     </details>
                     <details>
                         <summary>
@@ -243,6 +252,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/project.js"></script>
+    <script src="src/js/slide.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>

@@ -153,3 +153,16 @@
         height: 400px; // Réduction de la hauteur sur petits écrans
     }
 }
+@media screen and (max-width: 1266px){
+    .swiper-wrapper {
+        padding: 0;
+        img{
+            width: 80%;
+            max-width: 40em;
+            height: auto;
+        }
+        .swiper-slide{
+            flex-direction: column;
+        }
+    }
+}

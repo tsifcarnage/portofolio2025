@@ -1,0 +1,39 @@
+@use 'variable' as *;
+.swiper-wrapper {
+    padding: 0 5rem;
+    .swiper-slide{
+        @include flexing(center,0,2rem);
+    }
+    h2{
+        padding: 1rem 0;
+        font-size: 2.6rem;
+    }
+    p{
+        width: 100%;
+        max-width: 80%;
+        padding: 1rem 0;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            display: inline-block;
+            color: rgb(10, 243, 10);
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+        .fa-arrow-up-right-from-square{
+            padding-left: .5rem;
+        }
+    }
+}
+.swiper-pagination {
+    .swiper-pagination-bullet{
+        background: grey;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        background: green;
+        opacity: 1;
+    }
+}

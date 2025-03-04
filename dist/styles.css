@@ -573,6 +573,19 @@ nav li a:hover {
     height: 400px;
   }
 }
+@media screen and (max-width: 1266px) {
+  .swiper-wrapper {
+    padding: 0;
+  }
+  .swiper-wrapper img {
+    width: 80%;
+    max-width: 40em;
+    height: auto;
+  }
+  .swiper-wrapper .swiper-slide {
+    flex-direction: column;
+  }
+}
 .contact {
   gap: 3rem;
   padding-top: 4rem;
@@ -740,6 +753,47 @@ footer {
   box-shadow: 3px 2px 16px 5px #1B7A0A;
 }
 .up.show {
+  opacity: 1;
+}
+
+.swiper-wrapper {
+  padding: 0 5rem;
+}
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: 0;
+  gap: 2rem;
+}
+.swiper-wrapper h2 {
+  padding: 1rem 0;
+  font-size: 2.6rem;
+}
+.swiper-wrapper p {
+  width: 100%;
+  max-width: 80%;
+  padding: 1rem 0;
+}
+.swiper-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+.swiper-wrapper a:hover {
+  display: inline-block;
+  color: rgb(10, 243, 10);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+.swiper-wrapper a .fa-arrow-up-right-from-square {
+  padding-left: 0.5rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: grey;
+  opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: green;
   opacity: 1;
 }
 
