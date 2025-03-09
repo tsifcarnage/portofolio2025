@@ -595,6 +595,9 @@ nav li a:hover {
   align-items: center;
   gap: 3rem;
   flex-direction: column;
+  padding: 0 2rem;
+  width: calc(100% - 4rem);
+  max-width: 60rem;
   margin: auto;
 }
 .contact form input, .contact form textarea {
