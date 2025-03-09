@@ -233,7 +233,7 @@ nav li a:hover {
 }
 
 .container {
-  margin: 0 7rem;
+  margin: 0 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -451,7 +451,6 @@ nav li a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     margin: auto 5rem;
-    width: 450px;
   }
   .presentation {
     padding-top: 2rem;
@@ -464,7 +463,6 @@ nav li a:hover {
     width: 90%;
   }
   nav ul {
-    width: 180px;
     display: none;
     flex-direction: column;
     gap: 2rem;
@@ -485,9 +483,6 @@ nav li a:hover {
     position: fixed;
     top: 0;
     right: 0;
-  }
-  .service, .skill, .myproject, footer {
-    min-width: 500px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -599,11 +594,9 @@ nav li a:hover {
   align-items: center;
   gap: 3rem;
   flex-direction: column;
-  width: 50rem;
   margin: auto;
 }
 .contact form input, .contact form textarea {
-  max-width: 50rem;
   width: 100%;
   min-height: 4.5rem;
   padding: 0.5rem;
@@ -649,7 +642,6 @@ nav li a:hover {
 }
 .contact div {
   width: 100%;
-  max-width: 50em;
   margin: auto;
   padding: 0 3rem;
 }
@@ -666,7 +658,6 @@ footer {
 }
 
 .footer-contain {
-  width: 50rem;
   margin: auto;
 }
 .footer-contain hr {

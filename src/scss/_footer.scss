@@ -3,7 +3,7 @@ footer{
     background-color: $greenlight-color;
 }
 .footer-contain{
-    width: 50rem;
+    //width: 50rem;
     margin: auto;
     hr{
         border: 1px solid black;
@@ -50,7 +50,7 @@ footer{
                 font-weight: bold;
                 transition: color .5s ease-out;
                 &:hover{
-                    color: white;;
+                    color: white;
                 }
             }
         }

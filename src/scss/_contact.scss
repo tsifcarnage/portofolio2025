@@ -7,10 +7,10 @@
     form{
         @include flexing(center,center,3rem);
         flex-direction: column;
-        width: 50rem;
+        //width: 50rem;
         margin: auto;
         input, textarea{
-            max-width: 50rem;
+            //max-width: 50rem;
             width: 100%;
             min-height: 4.5rem;
             padding: .5rem;
@@ -59,7 +59,7 @@
     }
     div{
         width: 100%;
-        max-width: 50em;
+        //max-width: 50em;
         margin: auto;
         padding:0 3rem;
         h2{
