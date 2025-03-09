@@ -463,6 +463,7 @@ nav li a:hover {
     width: 90%;
   }
   nav ul {
+    width: 180px;
     display: none;
     flex-direction: column;
     gap: 2rem;
@@ -662,6 +663,8 @@ footer {
 }
 .footer-contain hr {
   border: 1px solid black;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .reseau ul {
@@ -810,6 +813,7 @@ footer {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -817,6 +821,7 @@ body {
   font-size: 1.6rem;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
